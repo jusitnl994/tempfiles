@@ -3,20 +3,25 @@
   "type": "object",
   "properties": {
     "firstName": {
-      "type": ["string", "null"]
+      "type": ["string", "null"],
+      "description": "The first name of the individual."
     },
     "lastName": {
-      "type": ["string", "null"]
+      "type": ["string", "null"],
+      "description": "The last name of the individual."
     },
     "email": {
       "type": ["string", "null"],
-      "format": "email"
+      "format": "email",
+      "description": "The email address of the individual, if provided."
     },
     "summary": {
-      "type": ["string", "null"]
+      "type": ["string", "null"],
+      "description": "A brief summary or description related to the individual or context."
     },
     "source": {
-      "type": ["string", "null"]
+      "type": ["string", "null"],
+      "description": "The source or origin of the data, such as a website or referral."
     }
   },
   "additionalProperties": false
