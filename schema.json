@@ -3,20 +3,20 @@
   "type": "object",
   "properties": {
     "firstName": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "lastName": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "email": {
-      "type": "string",
+      "type": ["string", "null"],
       "format": "email"
     },
     "summary": {
-      "type": "string"
+      "type": ["string", "null"]
     },
     "source": {
-      "type": "string"
+      "type": ["string", "null"]
     }
   },
   "additionalProperties": false
