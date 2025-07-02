@@ -2,26 +2,39 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "object",
   "properties": {
+    "type": {
+      "type": ["string", "null"],
+      "enum": ["Customer", "Lead", "Marketing", "Spam", null],
+      "description": "The type of contact."
+    },
     "firstName": {
       "type": ["string", "null"],
       "description": "The first name of the individual."
     },
     "lastName": {
       "type": ["string", "null"],
-      "description": "The last name of the individual."
+      "description": "The last name of the individual, if provided."
     },
     "email": {
       "type": ["string", "null"],
       "format": "email",
       "description": "The email address of the individual, if provided."
     },
+    "sqft": {
+      "type": ["string", "null"],
+      "description": "Square footage, stored as a string."
+    },
+    "bedrooms": {
+      "type": ["string", "null"],
+      "description": "Number of bedrooms, stored as a string."
+    },
+    "bathrooms": {
+      "type": ["string", "null"],
+      "description": "Number of bathrooms, stored as a string."
+    },
     "summary": {
       "type": ["string", "null"],
-      "description": "A brief summary or description related to the individual or context."
-    },
-    "source": {
-      "type": ["string", "null"],
-      "description": "The source or origin of the data, such as a website or referral."
+      "description": "A brief summary of the call, under one paragraph unless detailed."
     }
   },
   "additionalProperties": false
