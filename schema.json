@@ -45,7 +45,7 @@
     "source": {
       "type": ["string", "null"],
       "enum": ["Google", "Facebook", "Yelp", "Angi", "Sign", "Newspaper", "Referral", "Email", "Billboards", "Other", null],
-      "description": "The source of the contact, such as Google, Facebook, or Referral; null if none."
+      "description": "The source of the contact, such as Google, Facebook, or Referral; null if none provided."
     }
   },
   "additionalProperties": false
